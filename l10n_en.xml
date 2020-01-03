@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+	<l10n>
+	<translationContributors>Linkmat</translationContributors>
+		<texts>
+			<!-- Animmaux -->
+			<!-- chevre -->
+
+			
+		<text name="station_firehydrant" text="Bonne Fontaine Pompier"/>
+
+		<text name="map_farm_river" text="Ferme de la Riviere"/>
+		<text name="goatPasture" text="Pâturage des chèvres"/>
+		<text name="fillType_goat" 			text="Chèvre"/>
+		<text name="shopItem_goatBrown" 	text="Chèvre Alpine"/>
+		<text name="shopItem_goatWhite" 	text="Chèvre Blanche"/>
+		<text name="shopItem_goatBlack" 	text="Chèvre Noir"/>
+
+		<text name="map_farm_bio" 	text="Ferme Biloute Bio"/>
+		<text name="farm_bioCow" 	text="Ferme Vache Bio"/>
+		<text name="animals_cowPasture2" 	text="Pature des Vaches Bio"/>
+		<text name="map_farm_bio2" 	text="Ferme Agricole Biologique"/>
+		<text name="map_farm_pig" 	text="Ferme Cochon"/>
+		<text name="map_farm_agri" 	text="Ferme D'amerique"/>
+		<text name="station_coopAmeriqua" 	text="Coop La Petit Amerique"/>
+		<text name="sell_PatisserieTrump" 	text="Patisserie Trump"/>
+		<text name="fillType_carrot" text="Carotte" />
+		<text name="fillType_onion" text="Oignon" />
+		<text name="fillType_clover" text="Trèfle" />	
+		<text name="fillType_apple" text="Pomme" />
+		<!-- Ram -->
+		<text name="fillType_ram" 			text="Bélier"/>
+		<text name="shopItem_ramBlack" 		text="Bélier"/>
+		<!-- canard -->
+		<text name="fillType_duck" 			text="Canard"/> 	
+		<text name="shopItem_duckBrown" 	text="Canard Brun"/>
+		<text name="shopItem_duckWhite" 	text="Canard Blanc"/>
+		<text name="shopItem_duckBlack" 	text="Canard Noir"/>
+
+		<text name="shopItem_fuelStorage" 	text="Gas Station"/>
+		<!-- Vaches Canadienne -->
+		<text name="fillType_cow2" 			text="Vache Canadienne"/>
+		<text name="shopItem_cowcandian" 	text="Vache Canadienne"/>
+		
+		<text name="shopItem_canadian" 		text="Vache Canadienne"/>
+		
+		<!-- additional l10n information -->
+        <text name="input_ANIMATED_OBJECT_OPEN_DOOR" text="Ouvrir Porte"/>
+        <text name="input_ANIMATED_OBJECT_CLOSE_DOOR" text="Fermer Porte"/>
+        <text name="input_LIGHTSWITCH_CLICK" text="Ouvrir Lumiere"/>
+
+		<!-- Les Points de Ventes -->
+		<text name="station_coopfed" text="Coopérative Fédéré"/>
+		<text name="station_Haut_Bassin" text="Coopérative Du Haut Bassin"/>
+		<text name="station_haut_BASSINBuy" text="Coopérative Du Haut Bassin"/>
+		<text name="sell_Camping_boul" text="Boulangerie du Camping"/>
+		<text name="sell_Camping_resto" text="Restaurant du Camping"/>
+		<text name="sell_Camping_Suppermarche" text="Superette du Camping"/>
+
+		<text name="map_bga_artiflex" text="Artiflex"/>
+		<!-- les Fermes -->
+		<text name="map_old_farm" text="Vieille Ferme"/>
+		<text name="map_farm_cow2" text="Ferme du Baskatong"/>
+
+		<text name="map_farm_cumabassin" text="Cuma du bassin"/>
+		<text name="map_farm_cumabassin_ext" text="Extension - Cuma du bassin"/>
+		<text name="map_farm_bassin" text="Ferme du bassin"/>
+		<text name="map_farm_canardise" text="Ferme Canardise"/>
+		<text name="headerText_vertimixTMR" text="Ratio de mélange (RTM) :" />	
+		<text name="map_verger" text="Verger (Pommes)"/>
+		<text name="fillType_duckFoieGras" text="Fois Gras"/>
+
+		<!-- SeedMasters -->
+		<text name="enterText_vertiMix" text="Utiliser le VertiMix" />	
+		<text name="NEEDED_MIXING_TIME" text="Temps de traitement :" />
+		<text name="enterText_seedMaster" text="Utiliser le SeedMaster" />	
+		<text name="function_rubinTT" text="Rubin® TT est un désinfectant pour semences permettant de protéger les céréales contre les maladies fongiques. Il sert d'enrobage pour les semences dans le SeedMaster™." />
+
+
+
+		<text name="map_foret_horse" text="Forest des Chevaux" />	
+		<text name="map_foret_boulongne" text="Bois de Boulogne (Seb 24)" />	
+		<text name="map_foret_saint" text="Forest du Mont Saint-Dieu" />	
+		<!--<text name="fillTypeGroup_power"/> <en>Power Food</en> <de>Kraftfutter</de> </text>-->
+
+		<text name="station_household01" text="Mr ET miss LBDT" />	
+		<text name="station_household02" text="Mr Seb24" />	
+
+
+		<text name="hotSpot_cowPasture1" text="Pature des vaches #1" />	
+		<text name="hotSpot_cowPasture2" text="Pature des vaches #2" />	
+		<text name="hotSpot_cowPasture3" text="Pature des vaches #3" />	
+		<text name="hotSpot_GoatPasture1" text="Pature des Chèvres #1" />	
+		
+	
+		<text name="gc_appleTree" text="Pommier" />
+		<text name="gc_appleTree_input1" text="Eau:" />
+		<text name="gc_appleTree_input2" text="Fumier:" />
+
+
+		<text name="gc_appleTree_productLine" text="Pommier" />
+		<text name="gc_appleTree_inputsHeaderTitle" text="Resources" />
+		<text name="gc_appleTree_outputsHeaderTitle" text="Fruits" />
+   	</texts>
+</l10n>

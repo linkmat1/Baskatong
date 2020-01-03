@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+	<l10n>
+	<translationContributors>Linkmat</translationContributors>
+		<texts>
+		<text name="fillType_carrot" 				text="Carotte" />
+		<text name="fillType_onion" 				text="Oignon" />
+		<text name="fillType_clover" 				text="Trèfle" />
+		<text name="fillType_woodskid" 				text="Planches de bois" />
+		<text name="fillType_retailskid" 			text="Morceaux de bois" />
+		<text name="fillType_apple" 				text="Pomme" />
+		<text name="fillType_biodiesel" 			text="Bio-Diesel" />
+		<text name="fillType_tomato"  				text="Tomate" />
+		<text name="fillType_lettuce" 				text="Salade" />
+		<text name="fillType_rubinTT" 				text="Adexar (Fongicide)" />
+		<text name="fillType_compost" 				text="Compost" />
+		<text name="fillType_lab" 					text="Présure naturelle" />
+		<text name="fillType_cheese" 				text="Fromage" />
+		<text name="fillType_butter" 				text="Beurre" />
+		<text name="fillType_cow2" 					text="Vache Canadienne"/>
+		<text name="fillType_goat" 					text="Chèvre"/>
+		<text name="fillType_duck" 					text="Canard"/>
+		<text name="fillType_ram" 					text="Bélier"/>
+		<text name="fillType_calf" 					text="Veau"/>
+		<text name="fillType_beefProducts" 			text="Viande de Veau" />
+		<text name="fillType_porkProducts" 			text="Viande de Porc" />
+		<text name="fillType_poultryProducts" 		text="Cuisse de Poulet" />
+		<text name="fillType_sheepProducts" 		text="Viande d'angnaux" />
+		<text name="fillType_duckFoieGras" 			text="Fois Gras"/>
+		<text name="fillType_maizeSilage" 			text="Ensilage de mais" />
+		<text name="fillType_grassSilage" 			text="Ensilage d'herbe" />
+		<text name="fillType_goatMilk" 				text="Lait de chèvre" />
+		<text name="fillType_rye" 					text="Seigle" />
+		<text name="fillType_flour" 				text="Farine de Seigle" />
+		<text name="fillType_bread" 				text="Pain" />
+		<text name="fillType_breadDoughling" 		text="Pâte à pain" />
+		<text name="fillType_yeast" 				text="Levure" />
+		<text name="fillType_nitrogen" 				text="Azote" />
+		<text name="fillType_phosphor" 				text="Phosphore" />
+		<text name="fillType_potassium" 			text="Potassium" />
+		<text name="fillType_biomass" 				text="Biomasse" />
+		<text name="fillType_wholeGrain" 			text="Grain concassé" />
+		<text name="ui_statisticView_duck" 			text="Canard" />
+
+		<text name="animals_pigPasturemixed" 		text="Porcherie St-Antonin" />
+		<text name="animals_chickenCoopmixed" 		text="Poulailler  St-Antonin" />
+		<text name="category_consumerGoods" 		text="Produit de Production" />
+
+
+		<text name="unit_yeastPackages" 		text="Yeast packet" />
+		<text name="unit_flourBags" 			text="Sac de farine" />
+		<text name="shopItem_woodChipsShelf" 	text="Storage pallet for wood chips" />
+		<text name="unit_woodChipsBag" 			text="Woodchips Sacks" />
+		<text name="object_farmhouse_mixed" 	text="Ferme St-Antonin" />
+		<text name="map_farm_river" 			text="Ferme de la Riviere"/>
+		<text name="goatPasture" 				text="Pâturage des chèvres"/>
+		<text name="map_farm_bio"		 		text="Ferme Biloute Bio"/>
+		<text name="farm_bioCow" 				text="Ferme Vache Bio"/>
+		<text name="animals_cowPasture2" 		text="Pature des Vaches Bio"/>
+		<text name="animals_pastureSheep01" 	text="Pature des Mouton  # 01"/>
+		<text name="map_old_farm" 				text="Vieille Ferme"/>
+		<text name="map_farm_cow2" 				text="Ferme du Baskatong"/>
+		<text name="map_raffinerie" 			text="Rafinerie St-Alexandre"/>
+		<text name="map_farm_eta" 				text="E.T.A St-Alexandre"/>
+		<text name="map_farm_cuma" 				text="Cuma La VerLoossoise"/>
+		<text name="map_bga_agri" 				text="BGA de L'agriculteur"/>
+		<text name="map_farm_bassin" 			text="Ferme du bassin"/>
+		<text name="map_farm_canardise" 		text="Ferme Canardise"/>
+		<text name="map_farm_bio2" 				text="Ferme Agricole Biologique"/>
+		<text name="object_farmhouse_bassin" 	text="Ferme du Bassin"/>
+		<text name="map_farm_pig" 				text="Ferme Cochon"/>
+		<text name="map_farm_agri" 				text="Ferme D'amerique"/>
+		<text name="map_verger" 				text="Verger (Pommes)"/>
+		<text name="map_farmMaraichere" 		text="Ferme maraîchère" />
+		<text name="map_foret_horse" 			text="Forest des Chevaux" />	
+		<text name="map_foret_boulongne" 		text="Bois de Boulogne (Seb 24)" />	
+		<text name="map_foret_saint" 			text="Forest du Mont Saint-Dieu" />
+		<text name="shopItem_woodChipsBag" text="Sac de copeaux de bois" />
+		<text name="function_woodChipsBag" text="Wood chips in sack, can be used for heating. Pre-packed wood chips can also be used for the oven." />
+		<text name="globalCompany_petite_serre_01_salade_FactoryName" text="Petite serre Salade" />
+		<text name="globalCompany_petite_serre_salade_function" text="Cette Petite serre est une serre de production de palette de salade. Elle à besoin de semences, d'eau, d'Adexar® et de diesel." />
+		<text name="globalCompany_petite_serre_salade_FactoryDescription" text="Cette Petite serre est une serre de production de palette de salade. Elle à besoin de semences, d'eau, d'Adexar® et de diesel." />
+
+			<text name="shopItem_doughMixer" text="dough mixer" />
+			<text name="doughMixer_input_water" text="Requires: 1 bucket of water" />
+			<text name="doughMixer_input_flour" text="Requires: approx. 1/2 sack of flour" />
+			<text name="doughMixer_input_yeast" text="Requires: 1 packet yeast" />
+			<text name="output_doughMixer" text="dough pieces:" />
+			<text name="unit_doughlings" text="Doughlings" />
+
+			<text name="shopItem_bakingOven" text="Oven (bread)" />
+			<text name="bakingOven_input1" text="Fuels:" />
+			<text name="bakingOven_input2" text="Bread dough pieces:" />
+			<text name="bakingOven_output" text="baked bread:" />
+			<text name="unit_bread" text="Breads:" />
+
+		<text name="globalCompany_petite_serre_01_tomato_FactoryName" text="Petite serre Tomate 01" />
+		<text name="globalCompany_petite_serre_tomato_function" text="Cette Petite serre est une serre de production de palette de tomate. Elle à besoin de semences, d'eau, d'Adexar® et de diesel." />
+		<text name="globalCompany_petite_serre_tomato_FactoryDescription" text="Cette Petite serre est une serre de production de palette de tomate. Elle à besoin de semences, d'eau, d'Adexar® et de diesel." />
+		
+		
+		<text name="globalCompany_moulin" text="Moulin à farine de Seigle" />
+		<text name="globalCompany_moulin_factoryDescription" text="Ce Petite Moulin serre à faire la production de Sac de seigle, pour le pain. Elle a besoin de Seigle" />
+		
+		
+		<text name="s_w_sawmill_FactoryDescription" text="scierie. En outre, des palettes en bois et de la sciure de bois sont produites. Les deux peuvent être vendus pour la vente de copeaux de bois." />
+		<text name="s_w_sawmill_FactoryName" text="scierie" />
+		<text name="s_w_sawmill_productLine_1" text="Planches de bois" />
+		<text name="fillType_wood" text="Rondin de bois" />
+		
+		<!-- Ram -->
+		<text name="animal_calfZone" 			text="Stabulation Veau Bio"/>
+		<text name="animals_horseRanch" 		text="cheval"/>
+		<text name="animals_cowBio" 			text="Stabulation Vache Bio"/>
+		<!-- canard -->
+		<text name="shopItem_goatWhite" 		text="Chèvre (blanche)" />	
+		<text name="shopItem_goatGrey" 			text="Chèvre (grise)" />	
+		<text name="shopItem_calfBlackWhite" 	text="Veau Blanc et Noir"/>
+		<text name="shopItem_calfBlack" 		text="Veau Noir"/>
+		<text name="shopItem_goatBlackWhite" 	text="Chèvre (noire et blanche)" />
+		<text name="shopItem_goatBlack" 		text="Chèvre (noire)" />	
+		<text name="shopItem_calfBrown" 		text="Veau Brun"/>
+		<text name="shopItem_goatBrown" 		text="Chèvre (marron)" />	
+		<text name="shopItem_duckBrown" 		text="Canard Brun"/>
+		<text name="shopItem_duckWhite" 		text="Canard Blanc"/>
+		<text name="shopItem_duckBlack" 		text="Canard Noir"/>
+		<text name="shopItem_milkCanFillable" 	text="Sceau de Lait"/>
+		<text name="shopItem_labCanister" 		text="Présure naturelle"/>
+		<text name="shopItem_fruitBoxFillable" 	text="Boîte à fruits"/>
+		<text name="shopItem_fuelStorage" 		text="Gas Station"/>
+		<text name="shopItem_cowcandian" 		text="Vache Canadienne"/>
+		<text name="shopItem_canadian" 			text="Vache Canadienne"/>
+		<text name="shopItem_ramBlack" 			text="Bélier"/>
+		<text name="shopItem_flourBag" 			text="Sac de Farine"/>
+		<text name="shopItem_bread" text="Bread" />
+		<text name="shopItem_breadDoughling" text="Bread Doughling" />
+		<text name="shopItem_yeast" text="Backing Yeast" />
+		<text name="function_yeast" text="Baker's yeast is used to make bread." />
+		<text name="shopItem_breadBox" text="Bread Box" />
+		<text name="function_breadBox" text="A bread box is needed to transport bread. (will not be sold when the goods are sold)." />
+		<!-- Vaches Canadienne -->
+
+		
+		<!-- additional l10n information -->
+        <text name="input_ANIMATED_OBJECT_OPEN_DOOR" text="Ouvrir Porte"/>
+        <text name="input_ANIMATED_OBJECT_CLOSE_DOOR" text="Fermer Porte"/>
+        <text name="input_LIGHTSWITCH_CLICK" text="Ouvrir Lumiere"/>
+
+		<!-- Les Points de Ventes -->
+		<text name="station_coopfed" 			text="Coopérative Fédéré"/>
+		<text name="station_Haut_Bassin" 		text="Coopérative Du Haut Bassin"/>
+		<text name="station_haut_BASSINBuy" 	text="Coopérative Du Haut Bassin"/>
+		<text name="station_sawMill" 			text="Scierie Saint-Germain"/>
+		<text name="station_household01" 		text="Mr ET miss LBDT" />
+		<text name="station_household02" 		text="Mr Seb24" />
+		<text name="sell_Camping_boul" 			text="Boulangerie du Camping"/>
+		<text name="sell_Camping_resto" 		text="Restaurant du Camping"/>
+		<text name="sell_Camping_Suppermarche" 	text="Superette du Camping"/>
+		<text name="sell_CoopLePetitMoulinRouge" text="Coopérative Petit Moulin Rouge (Bio)"/>
+		<text name="station_cooppetitMoulinRouge" text="Coopérative Petit Moulin Rouge (Bio)"/>
+		<text name="station_prada" 				text="Prada (Laine)"/>
+		<text name="station_veolia" 			text="Veolia"/>
+		<text name="map_bga_artiflex" 			text="Artiflex"/>
+		<text name="station_coopAmeriqua" 		text="Coop La Petit Amerique"/>
+		<text name="sell_PatisserieTrump" 		text="Patisserie Trump"/>
+		<text name="station_firehydrant" 		text="Bonne Fontaine Pompier"/>
+		<text name="station_yoplait" 			text="Yoplait"/>
+		<text name="hotSpot_animalDealer" 		text="Marché au bestiaux"/>
+		<text name="SellingAnimalDealer" 		text="Encan S.Chelou (Vendeur d'Animaux)"/>
+		<text name="station_basf" 				text="BASF"/>
+		<text name="station_household01" text="Mr & Miss LBDT" />
+		<text name="station_household02" text="Christophe Colomb" />
+		<text name="station_household03" text="Mr Seb24" />
+		<text name="station_household04" text="Mr Tutur" />
+		<text name="station_household05" text="Mr Florian" />
+		<text name="sell_Boulangerie_fr" text="Boulangerie du Canton" />
+		<text name="sell_Boucherie_fr" text="Boucherie du Canton" />
+		<text name="sell_Restaurent_fr" text="Restaurent du Canton" />
+		<!-- les Fermes -->
+
+		<text name="headerText_vertimixTMR" 	text="Ratio de mélange (RTM) :" />
+	
+		<!-- SeedMasters -->
+		<text name="enterText_vertiMix" 		text="Utiliser le VertiMix" />
+		<text name="NEEDED_MIXING_TIME" 		text="Temps de traitement :" />
+		<text name="enterText_seedMaster" 		text="Utiliser le SeedMaster" />
+		<text name="function_rubinTT" text="Rubin® TT est un désinfectant pour semences permettant de protéger les céréales contre les maladies fongiques. Il sert d'enrobage pour les semences dans le SeedMaster™." />
+
+
+		<!--<text name="fillTypeGroup_power"/> <en>Power Food</en> <de>Kraftfutter</de> </text>-->
+
+
+
+
+		<text name="hotSpot_cowPasture1" 		text="Pature des vaches # 1" />
+		<text name="hotSpot_cowPasture2" 		text="Pature des vaches # 2" />
+		<text name="hotSpot_cowPasture3" 		text="Pature des vaches # 3" />
+		<text name="animals_cowpasture4" 		text="Pature des vaches # 4" />
+		<text name="hotSpot_GoatPasture1" 		text="Pature des Chèvres # 1" />
+		<text name="animals_sheepPasture_01" 	text="Pature des Mouton # 1" />
+		<text name="animals_horseRanch2" 		text="chevre magasin" />
+		
+		<text name="seasons_animalInfo_SHEEP_TYPE_RAM" text="Le bélier est le mâle non châtré de l'espèce Ovis aries réservé pour la reproduction (production d'agneaux). On désigne le mâle et la femelle, sans faire de distinction de sexe, sous le terme générique de mouton. L'espèce des moutons appartient à la famille des Bovidés. Le bélier blatère." />
+        <text name="seasons_animalInfo_GOAT_TYPE_BLACK_WHITE" text="La chèvre domestique (Capra hircus ou Capra hircus hircus, Linnaeus, 1758) est une espèce de mammifères herbivore ruminant, appartenant à la famille des bovidés, sous-famille des caprins. On les élève pour leur lait, leur cuir, leur poil et leur viande." />		
+        <text name="seasons_animalInfo_GOAT_TYPE_BROWN" text="La chèvre alpine est une race caprine originaire des Alpes.Cette race est une excellente laitière qui s'est imposée dans les élevages de type intensif auprès de la Saanen." />
+        <text name="seasons_animalInfo_GOAT_TYPE_WHITE" text="La saanen ou blanche de Gessenay ou chèvre de Gessenay est une race caprine originaire du Sannenland et de l'Obersimmental en Suisse. C'est une excellente laitière. Elle produit en moyenne 900 litres de lait par lactation, mais les plus productives dépassent 1 000 litres." />
+        <text name="seasons_animalInfo_GOAT_TYPE_BLACK" text="La chèvre alpine britannique est une race de chèvre domestique développée au début des années 1900. L'Alpine britannique est une grande productrice de lait de chèvre de qualité." />
+		<text name="seasons_animalInfo_DUCK_TYPE_WHITE" text="Le canard mulard est un hybride stérile issu du croisement de deux espèces de canard. En France, il est exclusivement destiné à être gavé pour la production de foie gras." />
+        <text name="seasons_animalInfo_DUCK_TYPE_BROWN" text="Le canard orpington est une race de canard domestique originaire d'Angleterre. C’est une très bonne race de canard, car elle allie un bon rendu de viande et une bonne ponte" />
+        <text name="seasons_animalInfo_DUCK_TYPE_BLACK" text="Le Canard de Duclair est originaire de Normandie, et issue du croisement de canards noirs et de Rouen . Produit des œufs et une viande peu grasse. De couleur bleue ou noire à reflets verdâtres." />
+		<text name="seasons_shopItem_SHEEP_TYPE_RAM" 		text="Bélier" />
+        <text name="seasons_shopItem_GOAT_TYPE_BLACK_WHITE" text="Chèvre (noire et blanche)" />
+		<text name="seasons_shopItem_GOAT_TYPE_BROWN" 		text="Chèvre Alpine" />
+        <text name="seasons_shopItem_GOAT_TYPE_WHITE" 		text="Chèvre Saanen" />
+        <text name="seasons_shopItem_GOAT_TYPE_BLACK" 		text="Chèvre British Alpine" />
+        <text name="seasons_shopItem_DUCK_TYPE_WHITE" 		text="Canard Mulard" />
+        <text name="seasons_shopItem_DUCK_TYPE_BROWN" 		text="Canard Orpington" />
+        <text name="seasons_shopItem_DUCK_TYPE_BLACK" 		text="Canard Duclair" />
+
+
+		<text name="shopItem_butterMax" 			text="Baratte" />
+		<text name="function_butterMax" text="Utilisée pour fabriquer du beurre. Remarque : un tonnelet à beurre est nécessaire pour transporter le beurre qui est produit." />	
+		<text name="headerText_butterMax" 			text="Baratte" />
+		<text name="enterText_butterMax" 			text="Utiliser la baratte" />
+		<text name="shopItem_fillableBox" 			text="Boîte en plastique" />
+		<text name="function_fillableBox" text="Boîte en plastique réutilisable à remplir à la main ou avec une remorque (toboggan à grain recommandé). Transport : fourche à palettes ou à la main quand elle est vide." />	
+		<text name="shopItem_fillableBoxSmall" 		text="Boîte en plastique (petite)" />
+		<text name="function_fillableBoxSmall" text="Boîte en plastique réutilisable à remplir à la main ou avec une remorque (toboggan à grain recommandé). Transport : fourche à palettes ou à la main comme elle est de petite taille." />	
+		<text name="shopItem_fillableWoodBox" 		text="Boîte en bois" />
+		<text name="function_fillableWoodBox" text="Boîte en bois réutilisable à remplir à la main ou avec une remorque (toboggan à grain recommandé). Transport : à la main." />	
+		<text name="shopItem_fillableCagebox" 		text="Boîte grillagée" />
+		<text name="function_fillableCagebox" text="Boîte grillagée réutilisable à remplir à la main ou avec une remorque (toboggan à grain recommandé). Transport : fourche à palettes." />	
+		<text name="shopItem_fillableBucket" 		text="Seau" />
+		<text name="function_fillableBucket" text="Utilisé à la fromagerie pour la production de fromage et de beurre." />	
+		<text name="shopItem_fillableButterBarrel" 	text="Tonnelet à beurre" />
+		<text name="function_fillableButterBarrel" 	text="Utilisé pour la production de beurre." />
+		<text name="shopItem_duckBathtub" 			text="Baignoire à canards" />
+		<text name="function_duckBathtub" text="Récipient plat pour embellir votre enclos à poules et canards. Peut être rempli d'eau." />	
+		<text name="shopItem_transportPallet" 		text="Palette de transport" />
+		<text name="function_transportPallet" text="Palette servant au transport de marchandises. Le chargement peut être maintenu en place par des sangles de serrage." />
+		<text name="shopItem_breadBox" text="Bread Box" />
+		<text name="function_breadBox" text="A bread box is needed to transport bread. (will not be sold when the goods are sold)." />
+		<!-- Addon -->
+		<text name="category_crates" text="Crates" />
+		<text name="category_productions" text="Prod. Equipment" />			
+		<text name="category_miscObjects" text="Misc" />
+
+		<text name="gc_appleTree" text="Pommier" />
+		<text name="fillType_waters" text="Eau:" />
+		<text name="gc_appleTree_input2" text="Fumier:" />
+		<text name="apple_productline" text="Pommier" />
+		<text name="gc_HeaderInput" text="Resources" />
+		<text name="gc_outputsHeaderTitle" text="Produits" />
+
+		<text name="gc_rainWaterStorage" text="Reservoir d'eau de pluie" />
+		<text name="gc_rainWaterStorageDesc" text="Ce réservoir est utilisé pour collecter les eaux de pluie. Le remplissage a lieu automatiquement quand il pleut. L'eau peut être retirée avec une remorque citerne." />
+		<text name="gc_rainWaterStorage_inputsHeaderTitle" text="Eau de pluie" />
+		<text name="gc_rainWaterStorage_outputsHeaderTitle" text="Sortie Eau de pluie" />
+		<text name="gc_rainWaterStorage_input1" text="Eau de pluie" />
+		<text name="gc_rainWaterStorage_productLine" text="Eau de pluie" />
+
+	
+		<text name="gc_cheeseFactory" text="Fabrique de fromage" />
+		<text name="gc_cheeseFactoryDesc" text="Dans cette fromagerie, vous pouvez fabriquer votre propre fromage." />
+		<text name="gc_cheeseFactory_productLine" text="Production de fromage" />
+		<text name="gc_cheeseFactory_outputsHeaderTitle" text="Fromage" />
+		
+		<text name="gc_slaughterHouse" text="Boucherie - Abattoir" />
+		<text name="gc_slaughterHouseDesc" text="Vous pouvez livrer vos animaux dans cette boucherie. Suivant l'espèce livrée, différentes viande seront produites et le prix de vente sera différent. Les produits pourront être vendus à la boutique de la ferme. Production de veau : transformation des veaux. Production porcine : transformation des porcs et des porcs reproducteurs. Production de viande de volaille : transformation de poulets et des canards. Production ovine et caprine : transformation des moutons et des chèvres." />
+		<text name="gc_slaughterHouse_input1" text="Veaux :" />
+		<text name="gc_slaughterHouse_input2" text="Porcs :" />
+		<text name="gc_slaughterHouse_input3" text="Poules/Canards :" />
+		<text name="gc_slaughterHouse_input4" text="Moutons/Chèvres :" />
+		<text name="gc_slaughterHouse_productLine1" text="Production de viande de veau" />
+		<text name="gc_slaughterHouse_productLine2" text="Production de viande de porc" />
+		<text name="gc_slaughterHouse_productLine3" text="Production de viande de volaille" />
+		<text name="gc_slaughterHouse_productLine4" text="Production de viande de mouton/chèvre" />
+		<text name="gc_slaughterHouse_inputsHeaderTitle" text="Animaux" />
+		<text name="gc_slaughterHouse_outputsHeaderTitle" text="Produit" />
+
+
+
+
+
+
+
+   	</texts>
+</l10n>

@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="46">
+    <author>Linkmat</author>
+    <version>1.0.0.5</version>
+    <build>31</build>
+
+    <title>
+         <en>La Ferme Baskatong DEV V2</en>
+        <de>La Ferme Baskatong DEV V2</de>
+    </title>
+
+    <description>
+         <fr>La Ferme Baskatong est un monde Imaginaire qui comprend plusieurs style de pays ( France, Canada, Etats-unis, et Alemagne) Comprend plus de 12 Fermes dans different coins de la map.</fr>
+        <en>Ferme du baskatong</en>
+        <de>Ferme du Baskatong</de>
+    </description>
+
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+	
+    <maps>
+        <map id="Baskatong" className="BaskatongMap" filename="scripts/Baskatong.lua" configFilename="maps/mapDE.xml" defaultVehiclesXMLFilename="mapDE_vehicles.xml" defaultItemsXMLFilename="mapDE_items.xml">
+            <title>
+                <en>La Ferme Baskatong DEV V2</en>
+                <de>La Ferme Baskatong DEV V2</de>
+            </title>
+            <description>
+             <fr>La Ferme Baskatong est un monde Imaginaire qui comprend plusieurs style de pays ( France, Canada, Etats-unis, et Alemagne) Comprend plus de 12 Fermes dans different coins de la map.</fr>
+                <en>La Ferme Baskatong est un monde Imaginaire qui comprend plusieurs style de pays ( France, Canada, Etats-unis, et Alemagne) Comprend plus de 12 Fermes dans different coins de la map.</en>
+                <de>Ferme du Reservoir baskatong</de>
+            </description>
+            <iconFilename>map_preview.png</iconFilename>
+        </map>
+    </maps>
+	<changeModTitle modTitle="Addon La Ferme Baskatong"/>
+
+		<renderElements>
+		<!-- Version -->
+		<renderElement startTime="0" endTime="300" showOnlyOnFirstStart="true">
+			<text name="$l10n_logo_text1" posX="0.5" posY="0.075" size="0.017" color="1 1 1" useSizeing="false" useColoring="false" maxSize="0.035" useBold="true"/>
+			<!--<overlay filename="hud/mapBranding.dds" posX="0.375" posY="0.5" width="0.25" height="0.11" /> -->
+		</renderElement>
+		
+		<!-- Credits -->
+		<renderElement startTime="400" endTime="900" showOnlyOnFirstStart="true">
+			<text name="$l10n_logo_text2" posX="0.5" posY="0.68" size="0.02" color="1 1 1" useSizeing="false" useColoring="false" maxSize="0.035" useBold="true" />
+			<!-- <overlay filename="hud/mapCredits.dds" posX="0.42" posY="0.25" width="0.15" height="0.06" />-->
+		</renderElement>
+	</renderElements>
+	<l10n filenamePrefix="l10n">
+		<text name="logo_text1"><en><![CDATA[La Ferme Baskatong V1.0.0.0
+© 2018-2019 Par Linkmat
+]]></en></text>
+		<text name="logo_text2"><en><![CDATA[Credits:
+
+Createur de la Map:
+Linkmat
+
+Scripters:
+Ifkonator
+
+Promotion :
+Linkmat
+
+Testeur : 
+SebYzar Le Chelou & pascool Le Cool
+
+Special Remerciment !
+LBDT Gamming, Seb24 
+Pour leur Magnifique aide
+]]></en></text>
+	</l10n>
+    <jointTypes>
+        <jointType name="hoseSystem"/>
+    </jointTypes>
+	<extraSourceFiles>
+		<sourceFile filename="scripts/stableBales.lua"/>
+		<sourceFile filename="scripts/animalLimitIncreaser.lua"/>
+		<sourceFile filename="scripts/SeasonsAnimalDeathFix.lua"/>
+		<sourceFile filename="scripts/AddBalesToWrapper.lua"/>
+		<sourceFile filename="scripts/AddStoreCategory.lua" />
+		<sourceFile filename="scripts/ChangeModTitle.lua" />
+		<sourceFile filename="scripts/l10nFix.lua"/>
+		<sourceFile filename="scripts/DynamicMud.lua"/>
+		<sourceFile filename="scripts/I3DLoadingFix.lua"/>
+		<sourceFile filename="scripts/RenderElement.lua" />
+		<sourceFile filename="scripts/AnimalFix.lua"/>
+		<sourceFile filename="scripts/AnimatedCharacter.lua"/>
+		<sourceFile filename="scripts/RegisterSpecialization.lua"/>
+		<sourceFile filename="scripts/GC_Checker.lua" />
+		<sourceFile filename="scripts/GC_PalletCreatorOffset.lua" />
+		<sourceFile filename="scripts/StableManureArea.lua"/>
+		<sourceFile filename="scripts/FillTypeConverter.lua"/>
+	</extraSourceFiles>
+		<globalCompany minimumVersion="1.1.5.0">
+        <customClasses>
+            <customClass name="GC_PalletCreatorOffset"/>
+        </customClasses>
+    </globalCompany>
+	<brands>
+        <brand name="HOFBERGMANN" title="HOFBERGMANN" image="$data/store/brands/brand_bergmann.dds"/>
+		<brand name="LSFMINNOVATIONS" title="LSFM Innovations" image="store/brand_lsfmInnovations.dds"/>
+		<brand name="BASF" title="BASF" image="store/brand_basf.dds"/>
+		<brand name="LINKMATINDUSTRIES" title="LINKMAT" image="store/linkmat_industries.dds"/>
+    </brands>
+
+<registerSpecializations>
+		<registerSpecialization name="addCloverBalesToWrapper" className="AddCloverBalesToWrapper" filename="scripts/AddCloverBalesToWrapper.lua" searchedSpecializations="baleWrapper"/>
+		<!--<registerSpecialization name="addBalesToWrapper" className="AddBalesToWrapper" filename="maps/scripts/AddBalesToWrapper.lua" searchedSpecializations="baleWrapper"/> BUG -->
+		<!--<registerSpecialization name="sprayerFix" className="SprayerFix" filename="maps/scripts/SprayerFix.lua" searchedSpecializations="sprayer"/> -->
+    </registerSpecializations>
+
+	<specializations>
+		<specialization name="mixerWagonImproved" className="MixerWagon" 		filename="scripts/MixerWagon.lua"/>
+		<specialization name="fillTypeSigns" 	  className="FillTypeSigns" 	filename="scripts/FillTypeSigns.lua"/>
+		<specialization name="changeEnterText" 	  className="ChangeEnterText" 	filename="scripts/ChangeEnterText.lua"/>
+	</specializations>
+	
+	<addBalesToWrapper>
+        <addBale fillType="clover" baleFilename="objects/squarebales/baleCloverSilage240.i3d" isRoundbale="false"/>
+        <addBale fillType="clover" baleFilename="objects/roundbales/roundbaleCloverSilage_w112_d130.i3d" isRoundbale="true"/>
+		<addBale fillType="grass" baleFilename="objects/roundbales/roundbaleSilage_w112_d130.i3d" isRoundbale="true"/><!-- TEST -->
+    </addBalesToWrapper>
+	
+	<vehicleTypes>
+	    
+			<type name="mapStorageSilos" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="baseMaterial" />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="wheels" />
+			<specialization name="attachable" />
+			<specialization name="lights" />
+			<specialization name="powerTakeOffs" />
+			<specialization name="powerConsumer" />
+			<specialization name="connectionHoses" />
+			<specialization name="attacherJoints" />
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="cover" />
+			<specialization name="dischargeable" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="fillTypeSigns" />
+		</type>
+				
+		<type name="mixerWagonEnterable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="baseMaterial" />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="ikChains" />
+			<specialization name="wheels" />
+			<specialization name="enterable" />
+			<specialization name="fillUnit" />
+			<specialization name="motorized" />
+			<specialization name="drivable" />
+			<specialization name="lights" />
+			<specialization name="attacherJoints" />
+			<specialization name="powerTakeOffs" />
+			<specialization name="connectionHoses" />
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+			<specialization name="fillVolume" />
+			<specialization name="dischargeable" />
+			<specialization name="turnOnVehicle" />
+			<specialization name="trailer" />
+			<specialization name="cover" />
+			<specialization name="mixerWagonImproved" />
+			<specialization name="tensionBeltObject" />
+			<specialization name="changeEnterText" />
+		</type>
+		
+		<type name="hayDryer" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="baseMaterial" />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="ikChains" />
+			<specialization name="wheels" />
+			<specialization name="enterable" />
+			<specialization name="fillUnit" />
+			<specialization name="motorized" />
+			<specialization name="drivable" />
+			<specialization name="lights" />
+			<specialization name="attacherJoints" />
+			<specialization name="powerTakeOffs" />
+			<specialization name="connectionHoses" />
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+			<specialization name="fillVolume" />
+			<specialization name="dischargeable" />
+			<specialization name="bunkerSiloInteractor" />
+			<specialization name="shovel" />
+			<specialization name="turnOnVehicle" />
+			<specialization name="trailer" />
+			<specialization name="cover" />
+			<specialization name="mixerWagonImproved" />
+			<specialization name="changeEnterText" />
+		</type>
+		
+		<type name="overloadModul" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="baseMaterial" />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="wheels" />
+			<specialization name="attachable" />
+			<specialization name="lights" />
+			<specialization name="powerTakeOffs" />
+			<specialization name="powerConsumer" />
+			<specialization name="connectionHoses" />
+			<specialization name="attacherJoints" />
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="cover" />
+			<specialization name="dischargeable" />
+		</type>
+		
+		<type name="mapProduction" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="baseMaterial" />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="wheels" />
+			<specialization name="attachable" />
+			<specialization name="lights" />
+			<specialization name="powerTakeOffs" />
+			<specialization name="powerConsumer" />
+			<specialization name="connectionHoses" />
+			<specialization name="attacherJoints" />
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="cover" />
+			<specialization name="turnOnVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="enterable" />
+			<specialization name="trailer" />
+			<specialization name="mixerWagonImproved" />
+			<specialization name="changeEnterText" />
+		</type>
+		
+		<type name="mapFillable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="baseMaterial"  />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+		</type>
+		
+		<type name="attachableMapPallet" parent="base" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="attachable" />
+			<specialization name="attacherJoints" />
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="tensionBeltObject" />
+		</type>
+		
+		<type name="universalIBCTank" parent="base" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="tensionBeltObject" />
+		</type>
+		
+		<type name="siloHopper" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="baseMaterial" />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="wheels" />
+			<specialization name="attachable" />
+			<specialization name="lights" />
+			<specialization name="powerTakeOffs" />
+			<specialization name="powerConsumer" />
+			<specialization name="connectionHoses" />
+			<specialization name="attacherJoints" />
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="cover" />
+			<specialization name="dischargeable" />
+			<specialization name="trailer" />
+		</type>
+		
+		<type name="bigBagFillingStation" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="baseMaterial" />
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="washable" />
+			<specialization name="dynamicallyLoadedParts" />
+			<specialization name="animatedVehicle" />
+			<specialization name="dashboard" />
+			<specialization name="cylindered" />
+			<specialization name="mountable" />
+			<specialization name="wheels" />
+			<specialization name="attachable" />
+			<specialization name="lights" />
+			<specialization name="powerTakeOffs" />
+			<specialization name="powerConsumer" />
+			<specialization name="connectionHoses" />
+			<specialization name="attacherJoints" />
+			<specialization name="foldable" />
+			<specialization name="cylinderedFoldable" />
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="cover" />
+			<specialization name="enterable" />
+			<specialization name="dischargeable" />
+			<specialization name="receivingHopper" />
+			<specialization name="changeEnterText" />
+		</type>
+		
+		<type name="crate" parent="base" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="tensionBeltObject" />
+		</type>
+		
+		<type name="bucket" parent="base" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="tensionBeltObject" />
+			<specialization name="fillTypeSigns" />
+		</type>
+						
+		<type name="transportPallet" parent="base" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="tensionBelts" />
+		</type>
+		
+		<type name="fruitBox" parent="pallet" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="fillTypeSigns" />
+		</type>
+
+		<type name="vegetablesBox" parent="pallet" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="fillTypeSigns" />
+		</type>
+		
+	</vehicleTypes>	
+	
+    <storeItems>
+
+		<newStoreCategories>
+			<newStoreCategory type="OBJECT" name="crates" title="$l10n_category_crates" image="store/store_fillableBoxSmall.dds" />
+			<newStoreCategory type="OBJECT" name="productions" title="$l10n_category_productions" image="store/store_butterMax.dds" />
+			<newStoreCategory type="OBJECT" name="miscObjects" title="$l10n_category_miscObjects" image="store/category_miscObjects.dds" />
+			<newStoreCategory type="OBJECT" name="consumerGoods" title="$l10n_category_consumerGoods" image="store/store_woodChipsBag.dds" />
+        </newStoreCategories>
+		<!-- Cuma Verloossoise-->
+		<storeItem xmlFilename="placeables/cuma/cuma_verloossoise.xml" />
+		
+	
+
+		<storeItem xmlFilename="placeables/animalHusbandry/husbandryChickenLarge.xml" />
+		<storeItem xmlFilename="placeables/farmhouse/fermeChickenLarge.xml" />
+		
+		<!-- Ferme du bassin Ferme Vache (Large)-->
+		<storeItem xmlFilename="placeables/grainStorage/SilageStorage.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/husbandryCowLarge.xml" />
+		<storeItem xmlFilename="placeables/farmhouse/farmCowIndustrial.xml" />
+		<storeItem xmlFilename="placeables/workshop/WorkShopcow.xml" />
+		<storeItem xmlFilename="placeables/bga/bgadeferme01.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/calfHusbandryindustriel.xml" />
+
+		
+		<!-- Farm Goat002-->
+		<storeItem xmlFilename="placeables/farmhouse/farmgoat002.xml" />
+		<storeItem xmlFilename="placeables/BunkerSilo/bunkerSiloSmall.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/husbandryGoatSmall.xml" />
+		<storeItem xmlFilename="placeables/workshop/WorkShopGoat002.xml" />
+		<!-- Farm Mixed-->
+		<storeItem xmlFilename="placeables/grainStorage/grainStorage.xml" />
+		<storeItem xmlFilename="placeables/grainStorage/pigFoodStorages.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/husbandryPigmixed.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/husbandryChickenmixed.xml" />
+		<storeItem xmlFilename="placeables/farmSilos/farmMixed/farmMixedSilo.xml" />
+		<storeItem xmlFilename="placeables/farmhouse/farmMixed.xml" />
+		<storeItem xmlFilename="placeables/workshop/WorkShopMixed.xml" />
+		<!-- Ferme Vache Bio-->
+ 		<storeItem xmlFilename="placeables/animalHusbandry/husbandryCowBio.xml"/>
+        <storeItem xmlFilename="placeables/farmSilos/FarmCowBio/FarmSiloCowSilo.xml"/>
+        <storeItem xmlFilename="placeables/farmSilos/FarmCowBio/FarmCowBioFertilizer.xml"/>
+        <storeItem xmlFilename="placeables/workshop/CowBioWorkShop.xml"/>    
+		<storeItem xmlFilename="placeables/animalHusbandry/calfHusbandry.xml"/>
+		<!-- SeedMaster -->
+		<!-- rainWater -->
+		<!-- HighPressureWasher -->
+		<storeItem xmlFilename="placeables/BunkerSilo/BunkerSiloDoubleBioCow.xml"/>
+		<!-- Verger-->
+		<storeItem xmlFilename="placeables/farmAgri/verger.xml" />
+		<storeItem xmlFilename="placeables/workshop/verger_workshop.xml" />
+		<storeItem xmlFilename="placeables/farmSilos/vergerFarm/fertilizerSiloverger.xml" />
+		<storeItem xmlFilename="placeables/farmSilos/vergerFarm/farmSiloverger.xml" />
+		<storeItem xmlFilename="placeables/appletree/appleTreeFixed.xml" />
+
+		<!-- Ferme Agriculture-->
+		<storeItem xmlFilename="placeables/farmAgri/farmAgri.xml" />
+		<storeItem xmlFilename="placeables/farmSilos/AgriFarm/farmAgriSilo.xml" />
+		<storeItem xmlFilename="placeables/farmSilos/AgriFarm/AgriFarmFertiliserSilo.xml" />
+			<!-- HighPressureWasher -->
+		<!-- Ferme des Moutons -->
+    	<storeItem xmlFilename="placeables/animalHusbandry/husbandrySheepLarge.xml" />
+    	<storeItem xmlFilename="placeables/BunkerSilo/SheepBunkerSilo.xml" />
+		<storeItem xmlFilename="placeables/farmSilos/sheepSilo/sheepSiloFarm.xml"/>
+		<!-- SeedMaster -->
+		<!-- rainWater -->
+		<!-- HighPressureWasher -->
+		<storeItem xmlFilename="placeables/farmSilos/sheepSilo/sheepSiloFarmFertilizer.xml" />
+		<storeItem xmlFilename="placeables/farmhouse/homemadeTrigerSleep.xml" />
+		<!-- Ferme Des Chevres-->
+    	<storeItem xmlFilename="placeables/animalHusbandry/husbandryGoatLarge.xml" />
+		<storeItem xmlFilename="placeables/workshop/goatWorkshop.xml" />
+		<storeItem xmlFilename="placeables/Water_Station/GoatWaterPomp.xml"/>
+		<storeItem xmlFilename="placeables/BunkerSilo/bunkerSiloGoat.xml"/>
+		<storeItem xmlFilename="placeables/farmhouse/farmhouse_goat.xml"/>
+		<!-- HighPressureWasher -->
+		<!-- Ferme des canard -->
+		<storeItem xmlFilename="placeables/animalHusbandry/husbandryDuckLarge.xml"/>
+		<storeItem xmlFilename="placeables/workshop/WorkShopCanardise.xml"/>
+		<storeItem xmlFilename="placeables/farmhouse/homemadeTrigerSleepDuck.xml" />
+		<!-- Ferme des Chevaux-->
+		<storeItem xmlFilename="placeables/animalHusbandry/husbandryHorseLarge.xml" />
+		<storeItem xmlFilename="placeables/farmSilos/HorseSilo/horsefarmSilo.xml" />		
+		<storeItem xmlFilename="placeables/BunkerSilo/BunkerSiloDoubleHorse02.xml" />
+		<storeItem xmlFilename="placeables/BunkerSilo/BunkerSiloDoubleHorse01.xml" />
+		<storeItem xmlFilename="placeables/farmhouse/farmhouse_horse.xml" />
+		<!-- rainWater -->
+		<!--bunker silo  -->
+		<!--bunker silo  -->
+		<!-- Ferme Maraichere-->
+		<storeItem xmlFilename="placeables/farmSilos/farmMaraichere/farmSilomaraicher.xml" />	
+		<storeItem xmlFilename="placeables/GlobalCompagnie/petite_serre/serre_letuce_01.xml" />
+		<storeItem xmlFilename="placeables/GlobalCompagnie/petite_serre/serre_tomato_01.xml" />
+		<storeItem xmlFilename="placeables/farmSilos/farmMaraichere/fertilizerSiloMaraicher.xml" />
+		<!-- rainWater -->
+		<!-- Ferme Agri Bio -->
+		<storeItem xmlFilename="placeables/workshop/AgriBio_workShop.xml"/>
+ 		<storeItem xmlFilename="placeables/farmSilos/AgriBio/FarmAgriBioSilo.xml"/>
+		<!-- ETA -->
+		<storeItem xmlFilename="placeables/farmAgri/eta.xml" />
+		<storeItem xmlFilename="placeables/farmSilos/Eta/FarmSiloEta.xml" />
+		<storeItem xmlFilename="placeables/grainStorage/liquidmanureStorage.xml" />
+		<!-- Pature -->
+		<storeItem xmlFilename="placeables/animalHusbandry/SheepPasture/SheepPasture02.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/SheepPasture/SheepPasture01.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/cowPasture/cowPasture01.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/cowPasture/cowPasture02.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/cowPasture/cowPasture03.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/cowPasture/cowPasture04.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/GoatPasture/GoatPasture1.xml" />
+		<!-- Fields Doors-->
+		<storeItem xmlFilename="placeables/FieldDoor/field141.xml" />
+		<storeItem xmlFilename="placeables/FieldDoor/field140.xml" />
+		<storeItem xmlFilename="placeables/FieldDoor/field143.xml" />	
+		<storeItem xmlFilename="placeables/FieldDoor/field72.xml" />
+		<!-- Animal Market-->
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer/animalDealer_cowDeco.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer/animalDealer_sheepDeco.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer/animalDealer_calfDeco.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer_goatDeco.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer/animalDealer_pigDeco.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer/animalDealer_cow2Deco.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer/animalDealer_chickenDeco.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer/animalDealer_horseDeco.xml" />
+		<storeItem xmlFilename="placeables/animalHusbandry/animalDealer/animalDealer_duckDeco.xml" />
+		<storeItem xmlFilename="placeables/Store/Sell/SellingAnimalDealer.xml" />
+		<!-- Vendeur Vilage Francais -->
+		<storeItem xmlFilename="placeables/Store/Sell/SellingStationBoul_fr.xml" />
+		<storeItem xmlFilename="placeables/Store/Sell/SellingStationBouch_fr.xml" />
+		<storeItem xmlFilename="placeables/Store/Sell/SellingStationRest_fr.xml" />
+		<!-- Coop Federée -->
+        <storeItem xmlFilename="placeables/Store/Sell/SellingCoopFedere.xml"/>
+        <storeItem xmlFilename="placeables/Store/Buy/BuyCoopFerere.xml"/> 
+   		<!-- BASF-->
+		<storeItem xmlFilename="placeables/Store/Sell/sellingBasfSeed.xml" />
+		<storeItem xmlFilename="placeables/Store/Buy/BuyBASFadexar.xml" />
+		<storeItem xmlFilename="placeables/Store/Buy/BuyBASFliquidstuff.xml" />
+		<storeItem xmlFilename="placeables/Store/Buy/BuyBASFfertilizer.xml"/>
+		<!-- Coop le petit Moulin Rouge -->
+		<storeItem xmlFilename="placeables/Store/Buy/BuyCoopPetitMoulinRouge.xml"/> 
+		<storeItem xmlFilename="placeables/Store/Sell/CoopLePetitMoulinRouge.xml"/> 
+		<!-- Camping Selling Station -->
+        <storeItem xmlFilename="placeables/Store/Sell/SellingCampingboulangerie.xml"/>
+        <storeItem xmlFilename="placeables/Store/Sell/SellingCampingRestaurants.xml"/>
+		<storeItem xmlFilename="placeables/Store/Sell/SellingCampingTabac.xml" />		 
+     	<!-- Coop du Haut Bassin -->
+        <storeItem xmlFilename="placeables/Store/Sell/SellingCoopHautBassin.xml"/>
+        <storeItem xmlFilename="placeables/Store/Buy/BuyCoopHautBassin.xml"/> 
+		<!-- Coop La Petite Amerique -->
+		<storeItem xmlFilename="placeables/Store/Sell/CooplaPetiteAmerique.xml"/>   
+		<storeItem xmlFilename="placeables/Store/Buy/BuyCooplaPetiteAmerique.xml"/> 
+		<!-- BGA-->
+		<storeItem xmlFilename="placeables/bga/bga.xml"/>
+		<!--<storeItem xmlFilename="placeables/bga/bga2.xml"/> -->
+		<storeItem xmlFilename="placeables/bga/bgadeferme01.xml" />
+		<!-- Gas Station -->
+        <storeItem xmlFilename="placeables/Store/Buy/gasStation/gasStation1.xml"/>
+		<storeItem xmlFilename="placeables/Store/Buy/gasStation/gasStationShell.xml" />
+		<!-- Selling Station Divers-->
+		<storeItem xmlFilename="placeables/Store/Sell/SellingPradaWool.xml" />
+		<storeItem xmlFilename="placeables/Store/Sell/SellingMilkYopLait.xml" />
+		<storeItem xmlFilename="placeables/Store/Sell/SellingPatisserieTrump.xml"/>
+		<storeItem xmlFilename="placeables/Store/Buy/kalkStation.xml"/> 
+		<!-- Cheese Factory-->
+        <storeItem xmlFilename="placeables/GlobalCompagnie/cheese/cheeseProduction.xml"/> 
+		<!-- Water Points-->
+		<storeItem xmlFilename="placeables/Water_Station/lakeBiocow.xml"/>
+		<storeItem xmlFilename="placeables/Water_Station/lakecentral.xml"/>
+		<storeItem xmlFilename="placeables/Water_Station/lakebrioagri.xml"/>
+		<storeItem xmlFilename="placeables/Water_Station/fontaine01.xml"/>
+		<storeItem xmlFilename="placeables/Water_Station/fontaine02.xml"/>
+		<storeItem xmlFilename="placeables/Water_Station/fontaine03.xml"/>
+		<storeItem xmlFilename="placeables/Water_Station/fontaine04.xml"/>
+		<storeItem xmlFilename="placeables/Water_Station/Firehydrant.xml" /> 
+		<!-- Shop WorkShops-->
+		<storeItem xmlFilename="placeables/workshop/Shop_workshop.xml" /> 
+		<!-- Train Systeme-->
+		<storeItem xmlFilename="placeables/farmSilos/RailwaySilo/RailwaySilo.xml" />
+		<storeItem xmlFilename="vehicles/SNCF/xml/locomotive2.xml" />
+		<storeItem xmlFilename="vehicles/SNCF/xml/Soufflet.xml" />
+		<storeItem xmlFilename="vehicles/SNCF/xml/Trans.xml" />
+		<storeItem xmlFilename="vehicles/SNCF/xml/Guyo.xml" />
+		<storeItem xmlFilename="vehicles/train/wagonTimber/wagonTimber.xml" />	
+		<storeItem xmlFilename="placeables/TrainSysteme/trainSystem.xml" />
+		
+<!-- Objects -->
+		<storeItem xmlFilename="objects/pallets/lettucePallet/lettucePallet.xml" />
+		<storeItem xmlFilename="objects/pallets/seedStainTank/seedStainTank.xml" />
+		<storeItem xmlFilename="objects/pallets/tomatoPallet/tomatoPallet.xml" />
+		<storeItem xmlFilename="objects/pallets/cheese/cheese.xml" />
+		<storeItem xmlFilename="objects/pallets/eggBox/eggBox.xml" />
+		<storeItem xmlFilename="objects/pallets/milkCan/milkCan.xml" />
+		<storeItem xmlFilename="objects/pallets/woolBale/woolBale.xml" />
+		<storeItem xmlFilename="objects/pallets/seedStainTank/seedStainTank.xml" />
+		<storeItem xmlFilename="objects/crates/fillableBox.xml" />
+		<storeItem xmlFilename="objects/crates/fillableBoxSmall.xml" />
+		<storeItem xmlFilename="objects/crates/fillableWoodBox.xml" />
+		<storeItem xmlFilename="objects/crates/cagebox.xml" />
+		<storeItem xmlFilename="objects/buckets/fillableBucket.xml" />
+		<storeItem xmlFilename="objects/barrels/fillableButterBarrel.xml" />
+		<storeItem xmlFilename="objects/pallets/milkCan/milkCan_Fillable.xml" />
+		<storeItem xmlFilename="objects/pallets/transportPallet/transportPallet.xml" />
+		<storeItem xmlFilename="objects/misc/duckBathtub.xml" />
+		<storeItem xmlFilename="objects/pallets/potatoBag/potatoBag.xml" />
+		<storeItem xmlFilename="objects/pallets/woodChipsBag/woodChipsBag.xml" />
+		<storeItem xmlFilename="objects/pallets/meatBoxes/beefBox.xml" />
+		<storeItem xmlFilename="objects/pallets/meatBoxes/porkBox.xml" />
+		<storeItem xmlFilename="objects/pallets/meatBoxes/poultryBox.xml" />
+		<storeItem xmlFilename="objects/pallets/meatBoxes/sheepBox.xml" />
+		<storeItem xmlFilename="objects/pallets/fruitBox/fruitBox.xml" />
+		<storeItem xmlFilename="objects/labCanister/labCanister.xml"/>
+        <storeItem xmlFilename="objects/pallets/woolBag/woolBag.xml"/>    
+		<storeItem xmlFilename="objects/buyableBales/buyableBales_dryGrassRound.xml" />
+		<storeItem xmlFilename="objects/buyableBales/buyableBales_silage.xml" />
+		<storeItem xmlFilename="objects/buyableBales/buyableBales_strawRound.xml" />
+		<storeItem xmlFilename="objects/pallets/foieGrasBox/foieGrasBox.xml" />
+		<storeItem xmlFilename="objects/pallets/fruitBox/fruitBox.xml" />
+		<storeItem xmlFilename="objects/pallets/woodskids/woodPallet.xml" />
+		<storeItem xmlFilename="objects/pallets/RandSkid/randPallet.xml" />
+		<storeItem xmlFilename="objects/pallets/flourBag/flourBag.xml" />
+		<storeItem xmlFilename="objects/pallets/bread/breadDoughling.xml" />
+		<storeItem xmlFilename="objects/pallets/yeast/yeast.xml" />
+		<storeItem xmlFilename="objects/pallets/woodChipsBag/woodChipsBagBuyable.xml" />
+		<storeItem xmlFilename="objects/pallets/flourBag/flourBagBuyable.xml" />
+		<storeItem xmlFilename="objects/pallets/bread/bread.xml" />
+		<storeItem xmlFilename="objects/pallets/bread/breadBox.xml" />
+
+		<!-- Production  Globals-->
+		<storeItem xmlFilename="placeables/GlobalCompagnie/RainWater/rainWaterStorage.xml" />
+		<storeItem xmlFilename="placeables/GlobalCompagnie/abatoire/slaughterHouse.xml" />
+		<storeItem xmlFilename="placeables/GlobalCompagnie/rafinerie/rafinerie.xml" />
+		<storeItem xmlFilename="placeables/GlobalCompagnie/sawMills/sawmill.xml" />
+		<storeItem xmlFilename="placeables/GlobalCompagnie/sawMills/woodchipper.xml" />		
+		<storeItem xmlFilename="placeables/GlobalCompagnie/seedMaster/seedMaster.xml"/> 
+		<storeItem xmlFilename="objects/pallets/woodskids/woodPallet.xml" />
+		<storeItem xmlFilename="objects/pallets/RandSkid/randPallet.xml" />
+		<storeItem xmlFilename="placeables/GlobalCompagnie/moulin/moulin.xml" />
+		<storeItem xmlFilename="placeables/GlobalCompagnie/abatoire/slaughterHouse.xml" />
+		<storeItem xmlFilename="placeables/GlobalCompagnie/bakehouse/doughMixer.xml" />
+		<storeItem xmlFilename="placeables/GlobalCompagnie/bakehouse/bakingOven.xml" />
+
+
+		<!-- Vehicule -->
+		<storeItem xmlFilename="vehicles/butterMax/butterMax.xml" />
+		<storeItem xmlFilename="vehicles/milkstorage/milkstorage.xml"/>
+		<storeItem xmlFilename="vehicles/vertiMixer/vertiMixTMR.xml"/>
+		<storeItem xmlFilename="vehicles/milkstorage/milkstorage02.xml"/>
+    	<storeItem xmlFilename="vehicles/bigBagFillingStation/bigBagFillingStation.xml" />	
+	    <storeItem xmlFilename="vehicles/WaterStorage/ferme_maraichere_02.xml" />
+ 		<storeItem xmlFilename="vehicles/WaterStorage/ferme_maraichere_01.xml" />
+		<storeItem xmlFilename="vehicles/WaterStorage/ferme_Bio_01.xml" />
+		<storeItem xmlFilename="character/horse/horse.xml" /> 
+
+		<storeItem xmlFilename="placeables/GasStation/SmallGasStation.xml" />
+		<storeItem xmlFilename="placeables/GasStation/bigGasStation.xml" />
+		<storeItem xmlFilename="placeables/grainStorage/liquidStorage.xml" />
+
+
+
+		<storeItem xmlFilename="placeables/Store/Sell/household/sellingPoint_household01.xml" />
+		<storeItem xmlFilename="placeables/Store/Sell/household/sellingPoint_household02.xml" />
+		<storeItem xmlFilename="placeables/Store/Sell/household/sellingPoint_household03.xml" />
+		<storeItem xmlFilename="placeables/Store/Sell/household/sellingPoint_household04.xml" />
+		<storeItem xmlFilename="placeables/Store/Sell/household/sellingPoint_household05.xml" />
+
+
+
+		<storeItem xmlFilename="placeables/PortManHole/portManhole.xml" />
+
+
+
+
+
+
+		
+        <!-- USE FOR MAPPING-->
+      	<storeItem xmlFilename="placeables/Store/Buy/temporaire.xml"/> 
+	 </storeItems>
+  	
+</modDesc>
+
+
