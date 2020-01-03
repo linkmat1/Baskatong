@@ -1,6 +1,6 @@
 ## FICHIER POUR LES TRADUCTION
 
-*** Je tien a remercier ceux qui vont pouvoir m'aider dans cette quête de traduction***
+Je tien a remercier ceux qui vont pouvoir m'aider dans cette quête de traduction
 
 
 
